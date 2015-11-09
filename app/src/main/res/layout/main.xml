@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/contacts_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@color/transparent_actionbar"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/contactsback"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:contentDescription="back"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="CONTACTS"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Type a name or mobile number" >
+        </EditText>
+<TextView
+                android:id="@+id/tv_ensieg_grpText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="Ensieg Groups"
+                android:visibility="gone"
+                android:textColor="@android:color/black" />
+        <ListView
+            android:id="@+id/list_ensieg_groups"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:cacheColorHint="#00000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent_actionbar"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.80"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="CONTACTS"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/ensieg_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.53"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="ENSIEG CONTACTS"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:cacheColorHint="#00000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_actionbar" >
+
+        <LinearLayout
+            android:id="@+id/accepted_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/addTeam_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="ADD TO TEAM" />
+
+            <Button
+                android:id="@+id/cancel_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="CANCEL"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

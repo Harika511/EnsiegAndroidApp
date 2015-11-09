@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/main_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:alpha="0.8"
+        android:gravity="center_horizontal"
+        android:text="@string/outofcampus_main"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_textsize" />
+
+    <ImageView
+        android:id="@+id/ensieg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_above="@+id/main_tx"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:src="@drawable/ensieg_name" />
+
+    <TextView
+        android:id="@+id/sub_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_tx"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_10"
+        android:alpha="0.8"
+        android:text="@string/outofcampus_sub"
+        android:textColor="@color/white"
+        android:textSize="@dimen/small_textsize" />
+
+    <EditText
+        android:id="@+id/emailid_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_tx"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@drawable/signup_bg"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:padding="@dimen/dimen_10"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/notify_btn"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailid_et"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_bg"
+        android:letterSpacing="0.1"
+        android:text="@string/notify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_textsize" />
+
+</RelativeLayout>

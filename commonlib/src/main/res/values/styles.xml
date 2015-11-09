@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkMain</item>
+        <item name="colorPrimary">@color/colorPrimaryMain</item>
+        <item name="colorAccent">@color/colorAccentMain</item>
+
+        <!--<item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+        <item name="android:itemTextAppearance">@style/PopupMenuStyle</item>
+
+        <!--<item name="android:actionBarStyle">@style/ToolBarStyle</item>-->
+        <!--<item name="android:textColorPrimary">@color/veg_item_color</item>-->
+        <!--<item name="android:windowBackground">@color/colorPrimaryMain</item>-->
+
+    </style>
+
+    <style name="ToolBarTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">21dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PopupMenuStyle">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/defaultBackgroundColor</item>
+    </style>
+
+    <!--  App Theme with Transparent Status Bar -->
+
+    <style name="AppThemeTransparentStatusBar" parent="AppTheme"></style>
+
+    <!--  No ActionBar Theme   -->
+
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- Text Styles  -->
+
+    <style name="AppFont">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Body1Style" parent="AppFont">
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="Body2Style" parent="AppFont">
+        <item name="android:textSize">13dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="Body1EdiTextStyle" parent="AppFont">
+        <item name="android:textSize">14dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:includeFontPadding">true</item>
+    </style>
+
+    <style name="Body1HeadLineStyle" parent="Body1Style">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="Body2HeadLineStyle" parent="Body2Style">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="MenuStyle" parent="AppFont">
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="Body1SmallerStyle" parent="AppFont">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="SubHeadStyle" parent="AppFont">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="AppFont">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <style name="HintMessageStyle" parent="AppFont">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/colorAccentMain</item>
+    </style>
+
+    <style name="ErrorMessageStyle" parent="AppFont">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <!-- Dialog Text Styles -->
+
+    <style name="DialogTitleStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/action_button_color</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DialogMessageStyle" parent="AppFont">
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="android:textColor">#515151</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DialogOptionStyle" parent="AppFont">
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="android:textColor">@color/action_button_color</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <!--         ProgressBar Styles            -->
+
+    <style name="AppThemeLinearProgressStyle">
+        <item name="lpd_strokeColor">@color/colorPrimaryMain</item>
+        <item name="lpd_strokeSecondaryColor">@color/colorPrimaryDarkMain</item>
+    </style>
+
+    <style name="AppThemeCircularProgressStyle">
+        <item name="cpd_strokeColor">@color/colorPrimaryMain</item>
+        <item name="cpd_strokeSecondaryColor">@color/colorPrimaryDarkMain</item>
+    </style>
+
+</resources>

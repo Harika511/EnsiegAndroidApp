@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white" 
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55"
+        android:background="@color/transparent_actionbar"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/otpback"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="back"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_15"
+            android:scaleX="0.95"
+            android:scaleY="0.95"
+            android:src="@drawable/back" />
+
+        <TextView
+                android:id="@+id/otp_txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:text="@string/signup"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/little_small_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="Please Enter the One Time Password"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/little_small_textsize" />
+
+    <TextView
+        android:id="@+id/tv_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="sent to your mobile"
+        android:textSize="@dimen/small_textsize" />
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="@dimen/dimen_180"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/rectangle_background2"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btverify"
+        android:layout_width="@dimen/dimen_220"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@drawable/rectangle_background"
+        android:text="Verify"
+        android:textSize="@dimen/small_textsize" />
+
+    <Button
+        android:id="@+id/bt_resend_otp"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@drawable/rectangle_background2"
+        android:text="Resend OTP"
+        android:textSize="@dimen/small_textsize" />
+
+</LinearLayout>

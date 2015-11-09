@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationProfileImageView"
+        android:src="@drawable/ic_lens_black_48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:paddingBottom="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="is in your game"
+        android:id="@+id/notificationVerbTextView"
+        android:layout_marginLeft="5dp"
+        android:textSize="12dp"
+
+        android:layout_alignBottom="@+id/notificationNameTextView"
+        android:layout_toRightOf="@+id/notificationNameTextView"
+        android:layout_toEndOf="@+id/notificationNameTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Mohan Gau"
+        android:id="@+id/notificationNameTextView"
+        android:layout_alignTop="@+id/notificationProfileImageView"
+        android:layout_toRightOf="@+id/notificationProfileImageView"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/notificationProfileImageView" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/notificationSportImageView"
+        android:src="@drawable/football"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/notificationNameTextView"
+        android:layout_alignLeft="@+id/notificationNameTextView"
+        android:layout_alignStart="@+id/notificationNameTextView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sun, 24 Aug 7:30 PM"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/notificationTimeTextView"
+        android:layout_alignBottom="@+id/notificationSportImageView"
+        android:layout_toRightOf="@+id/notificationSportImageView"
+        android:layout_toEndOf="@+id/notificationSportImageView" />
+
+</RelativeLayout>

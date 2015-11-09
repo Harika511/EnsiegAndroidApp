@@ -1,0 +1,49 @@
+<resources>
+
+    <color name="lightgreen">#ff7bae34</color>
+    <color name="termstext">#ff808080</color>
+    <color name="login_btn_focus">#ff4b6d20</color>
+    <color name="white">#ffffffff</color>
+    <color name="signup_btn_start">#4D4D4D</color>
+    <color name="signup_btn_end">#F2F2F2</color>
+    <color name="login_btn_end">#00FFBB</color>
+    <color name="login_btn_start">#050A15</color>
+    <color name="gplus_signin">#dd4b39</color>
+    <color name="fblogin">#3b5998</color>
+    <color name="logobackground">#40394C</color>
+    <color name="light_gray">#ffc8c8c8</color>
+    <color name="transperent_black">#000000</color>
+    <color name="host_background">#1E222D</color>
+    <color name="light_blue">#1FBAD6</color>
+    <color name="light_gray_">#eeeeee</color>
+    <color name="green_">#72C441</color>
+    <color name="background_gray">#1A1E29</color>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="transparent_actionbar">#F0F0F4</color>
+    <color name="timeline_actionbar">#F1F0F5</color>
+    <color name="clicking_color">#1CDBBD</color>
+    <color name="blue">#ff2570ba</color>
+    <color name="grey">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="symptom_color_selected">#003366</color>
+    <color name="reaction_color_selected">#003366</color>
+    <color name="static_text_color">#003366</color>
+    <color name="journal_entry_listitem_text_color">#003366</color>
+    <color name="note_text_disabled">#333333</color>
+    <color name="blue1">#0000FF</color>
+    <color name="navy">#6699FF</color>
+    <color name="sky">#0099CC</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#e7e7e7</color>
+    <color name="lightgray02">#bfbfbf</color>
+    <color name="dark">#000015</color>
+    <color name="lightgreen1">#336666</color>
+    <color name="orrange">#e33d1b</color>
+    <color name="darkorrange">#cc2303</color>
+
+</resources>

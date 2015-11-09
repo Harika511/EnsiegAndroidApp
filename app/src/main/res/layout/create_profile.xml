@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/create_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@color/transparent_actionbar"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/profileback"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:contentDescription="back"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="CREATE PROFILE"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_profile_Next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@android:color/black" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/edit_profile" />
+
+                <TextView
+                    android:id="@+id/txt_profile_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:gravity="center"
+                    android:text="Welcome "
+                    android:textSize="@dimen/medium_textsize" />
+            </LinearLayout>
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:layout_marginTop="@dimen/dimen_10" -->
+            <!-- android:alpha="0.4" -->
+            <!-- android:text="Add Your Profile Picture" -->
+            <!-- android:textSize="@dimen/more_small_textsize" /> -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="Age"
+                android:textSize="@dimen/more_small_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:hint="Enter Your Age"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/more_small_textsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/transperent_black" />
+            </LinearLayout>
+            <!-- </LinearLayout> -->
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:text="Gender"
+                android:textSize="@dimen/more_small_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btMale"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:text="Male"
+                    android:textSize="@dimen/more_small_textsize" 
+                    android:background="@color/transparent_actionbar"
+                    />
+
+                <Button
+                    android:id="@+id/btFemale"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:text="Female"
+                    android:textSize="@dimen/more_small_textsize" 
+                    android:background="@color/transparent_actionbar"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_40"
+                android:text="Select Your Favourite Sports"
+                android:textSize="@dimen/small_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_football"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/football_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Football"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_basketball"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/basketball_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Basketball"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_volleyball"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/volleyball_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Volleyball"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_tennis"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tennis_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Tennis"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_badminton"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/hockey_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Badminton"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_tbl_tennis"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/table_tennis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Table Tennis"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_profile_cricket"
+                        android:layout_width="@dimen/dimen_40"
+                        android:layout_height="@dimen/dimen_40"
+                        android:src="@drawable/cricket_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="Cricket"
+                        android:textSize="@dimen/more_small_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/crt_prfl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_actionbar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/encorageFriends_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/encourage_friend"
+            android:textColor="@android:color/black" />
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="1dp" -->
+        <!-- android:layout_marginLeft="50dp" -->
+        <!-- android:layout_marginRight="50dp" -->
+        <!-- android:background="@color/transperent_black" -->
+        <!-- android:gravity="center" /> -->
+    </RelativeLayout>
+</RelativeLayout>

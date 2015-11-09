@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/timeline_actionbar" >
+
+    <ImageView
+        android:id="@+id/timelineback"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_centerVertical="true"
+        android:contentDescription="back"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_15"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/timeline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/timelineback"
+        android:gravity="center_vertical"
+        android:text="TIMELINE"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/little_small_textsize" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+
+    <!--       AppThemeColors            -->
+
+    <color name="colorPrimaryDarkMain">#0D47A1</color>
+    <color name="colorPrimaryMain">#1565C0</color>
+    <color name="colorAccentMain">#00C853</color>
+
+    <color name="action_button_color_dark">#EF6C00</color>
+    <color name="action_button_color">#FB8C00</color>
+
+    <color name="button_tap_color">#737ecce8</color><!-- 73d1d1d1 -->
+    <color name="fab_colorNormal">#00C853</color>
+    <color name="fab_colorPressed">#4caf50</color>
+
+    <!--  Default Colors   -->
+
+    <color name="defaultBackgroundColor">#fff3f3f3</color>
+    <color name="defaultImageBackgroundColor">#fff3f3f3</color>
+
+    <!-- Tabs Colors -->
+
+    <color name="normal_tab_text_color">#ffffff</color>
+    <color name="selected_tab_text_color">#0000ff</color>
+
+    <!--   SHOWCASE Colors   -->
+
+    <color name="showcase_mask_color">#B3111111</color>
+    <color name="showcase_hint_message_color">#ffffff</color><!-- 73d1d1d1 -->
+    <color name="showcase_action_message_color">#EF6C00</color>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/iv_contact_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:src="@drawable/profile_selected" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="@drawable/bg_row"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvphone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Phone no"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="INVITE"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/selected_contact_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_weight="0.1"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text=""
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_ensiegContact"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:src="@drawable/ensieg_logo" />
+
+</LinearLayout>

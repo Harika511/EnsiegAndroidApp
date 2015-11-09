@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/loholayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_50"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/bt_logo_signup"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_weight="1"
+            android:alpha="0.8"
+            android:background="@drawable/signup_bg"
+            android:letterSpacing="0.1"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_logo_login"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_weight="1"
+            android:alpha="0.8"
+            android:background="@drawable/login_bg"
+            android:letterSpacing="0.1"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_175"
+        android:src="@drawable/ensieg" />
+
+</RelativeLayout>

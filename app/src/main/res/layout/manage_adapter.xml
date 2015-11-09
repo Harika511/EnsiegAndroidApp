@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+         >
+
+        <TextView
+            android:id="@+id/tv_manage_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amruth" />
+
+        <TextView
+            android:id="@+id/tv_team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@id/tv_manage_Name"
+            android:layout_toRightOf="@id/tv_manage_Name"
+            android:focusable="true"
+            android:clickable="true"
+            android:text="Team1" />
+
+        <TextView
+            android:id="@+id/tv_team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_team1"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@id/tv_manage_Name"
+            android:layout_toRightOf="@id/tv_manage_Name"
+            android:focusable="true"
+            android:clickable="true"
+            android:text="Team2" />
+
+        <ImageView
+            android:id="@+id/accept_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/reject_iv"
+            android:layout_toLeftOf="@+id/reject_iv"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/accept" />
+
+        <ImageView
+            android:id="@+id/reject_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true"
+            android:src="@drawable/reject" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feed_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10" >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_cards_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_cards"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_textsize"
+        android:visibility="gone" />
+
+    <!--
+         <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="12dp"
+        
+        app:layout_behavior="com.skylka.ensieg.floatingaction_menu.ScrollingFABBehavior"
+        android:src="@drawable/host_icon"
+        app:borderWidth="0dp" />    -->
+
+</RelativeLayout>

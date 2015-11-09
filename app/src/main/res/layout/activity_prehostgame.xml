@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/host_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/host_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/hostback"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="back"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_15"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/host_txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="center_vertical"
+            android:text="@string/host_a_game"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/little_small_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/host_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/host_tx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/host_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/little_small_textsize" />
+
+        <ListView
+            android:id="@+id/host_listview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/dimen_5"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ensig_base_url">http://52.74.177.78/api/index.php</string>
+
+    <string name="app_name">Ensieg</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="signup">SIGN UP</string>
+    <string name="host_a_game">HOST A GAME</string>
+    <string name="login">LOG IN</string>
+    <string name="or">OR</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="network">Network</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="mobile_number">Mobile +91 9123456789</string>
+    <string name="password">Password</string>
+    <string name="next">NEXT</string>
+    <string name="editprfile">Edit Profile</string>
+    <string name="signout">Sign Out</string>
+    <string name="emptytext">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="encourage_friend"><u>ENCOURAGE YOUR FRIENDS TO PLAY</u></string>
+    <string name="up_name">Amrit Om Nayak</string>
+    <string name="bits">BITS PILANI-Hyderabad</string>
+    <string name="teamcount">1</string>
+    <string name="countrycode">+91&#160;&#160;</string>
+      <string name="add_team">ADD NEW TEAM</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="navigation_drawer_items_array">
+        <item>PROFILE</item>
+        <item>TEAMS</item>
+        <item>HELP</item>
+        <item>CONTACTS</item>
+        <item>ABOUT</item>
+        <item></item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="host_text">Which Sport do you want to Host?</string>
+    <string name="dummy_text"><b>Gautam Krishna</b> is hosting</string>
+
+    <!-- GCM -->
+    <string name="gcm_unregistered" translatable="false">From GCM: device successfully unregistered!</string>
+    <string name="gcm_error" translatable="false">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error" translatable="false">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted" translatable="false">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering" translatable="false">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered" translatable="false">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered" translatable="false">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error" translatable="false">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error" translatable="false">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="email_hint">Please enter your email address</string>
+    <string name="outofcampus_main">Sorry! We are not available in your location</string>
+    <string name="outofcampus_sub">Be the first to know when we launch</string>
+    <string name="notify">NOTIFY ME</string>
+    <string name="hosting_text"><h1>Gautam Krishna</h1> is hosting  </string>
+    <string name="no_cards">No cards avaliable to this game.</string>
+    <string name="no_timeline">You don\'t have Timeline events yet..</string>
+
+</resources>

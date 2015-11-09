@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skylka.ensieg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Fine location is for getting user location values. -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.skylka.ensieg.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.skylka.ensieg.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ensieg_MatchCenter"
+            android:theme="@style/AppBaseThemeNoBar" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_SignupActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_OTPActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_MatchCenter"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_MatchCenter2"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_CreateProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_HomeActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_ResetPasswordActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_PreHostAGameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_HostAGameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_ProfileDisplay_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_ProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_UpdateProfile_Activity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_OutOfCampusActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_EmailVerification_Activity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_WelcomeActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_EmailOtp_Activity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="com.skylka.ensieg.activities.Ensieg_MatchCenter" -->
+        <!-- android:configChanges="orientation" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_SearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_ChatActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_NotificationListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_FirstRunExpActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_AboutUsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- <activity android:name="com.skylka.ensieg.activities.Ensieg_HomeActivity" -->
+        <!-- android:theme="@style/AppTheme" -->
+        <!-- > -->
+        <!-- </activity> -->
+        -->
+
+
+
+
+
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_TeamGroupsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+>>>>>>> branch 'dev' of https://github.com/blackgoogle/ENSIEG-AndroidDev.git
+
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_TeamsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_TimeLineActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_HostManageActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_ContactsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.Ensieg_Password_ForEdit_Profile_Activity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" 
+            android:theme="@style/MyDialogTheme">
+        </activity>
+        <activity
+            android:name="com.skylka.ensieg.activities.MyCalendarActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogTheme" >
+        </activity>
+
+        <service android:name="com.skylka.ensieg.GCMIntentService" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.skylka.ensieg" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

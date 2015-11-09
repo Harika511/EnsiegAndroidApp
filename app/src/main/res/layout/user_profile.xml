@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv_profile_display"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:background="@drawable/circle"
+            android:src="@color/accent_material_dark" />
+
+        <TextView
+            android:id="@+id/tv_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/iv_profile_display"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/up_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_textsize" />
+
+        <TextView
+            android:id="@+id/tv_age_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name_profile"
+            android:layout_alignStart="@+id/tv_name_profile"
+            android:layout_below="@+id/tv_name_profile"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="Male 18"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_small_textsize" />
+
+        <TextView
+            android:id="@+id/tv_network_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_age_profile"
+            android:layout_alignStart="@+id/tv_age_profile"
+            android:layout_below="@+id/tv_age_profile"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="BITS Hyderabad"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_small_textsize" />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignLeft="@+id/tv_network_profile"
+            android:layout_alignStart="@+id/tv_network_profile"
+            android:layout_below="@+id/tv_network_profile"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:id="@+id/tv_pNumber_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_phone"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/iv_phone"
+            android:layout_toRightOf="@+id/iv_phone"
+            android:text="+91 9084839248"
+            android:textColor="@android:color/black" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@+id/iv_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_130" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlfb"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_fb_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Football"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+                         />
+
+                    <ImageView
+                        android:id="@+id/iv_fb_Profile"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_below="@id/tv_fb_profile"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/football_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlbb"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/basketballTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Basketball"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_bb_Profile"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_below="@id/basketballTextView"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/basketball_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlvb"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/volleyballTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="VolleyBall"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_vb_Profile"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_below="@id/volleyballTextView"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/volleyball_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rltennis"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/dimen_40"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tennisTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Tennis"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_tennis_Profile"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_below="@id/tennisTextView"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/tennis_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlbm"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="41dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_bm_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Badminron"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_bm_Profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/tv_bm_profile"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/hockey_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rltt"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="41dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_tt_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Table Tennis"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_tt_Profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/tv_tt_profile"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/table_tennis"
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlcricket"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="41dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_cricket_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="Cricket"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/more_small_textsize" />
+
+                    <ImageView
+                        android:id="@+id/iv_cricket_Profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/tv_cricket_profile"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/cricket_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

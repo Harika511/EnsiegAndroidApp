@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/about_us_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55"
+        android:background="@color/transparent_actionbar"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="back"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_15"
+            android:scaleX="0.95"
+            android:scaleY="0.95"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/about_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="center_vertical"
+            android:text="ABOUT"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/little_small_textsize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rate_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_below="@id/about_us_rl"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15" >
+
+        <TextView
+            android:id="@+id/rate_us_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimen_5"
+            android:text="Rate Us in Google Play"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_textsize" />
+
+        <TextView
+            android:id="@+id/rate_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_gray_" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/like_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_below="@id/rate_rl"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15" >
+
+        <TextView
+            android:id="@+id/like_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_5"
+            android:text="Like Us on Facebook"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_textsize" />
+
+        <TextView
+            android:id="@+id/like_us_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_gray_" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/legal_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_below="@id/like_rl"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15" >
+
+        <TextView
+            android:id="@+id/legal_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimen_5"
+            android:text="Legal"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/medium_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:text="App Version" />
+
+</RelativeLayout>

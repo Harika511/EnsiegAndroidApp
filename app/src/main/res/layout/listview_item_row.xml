@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/line_menu"
+        android:layout_width="3dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/login_btn_end"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingRight="@dimen/dimen_20"
+        android:src="@drawable/ic_action_share" />
+
+    <TextView
+        android:id="@+id/menu_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/menu_icon"
+        android:paddingRight="@dimen/dimen_10"
+        android:text="Folder name here."
+        android:textSize="@dimen/medium_textsize" />
+
+</RelativeLayout>

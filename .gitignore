@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+.DS_Store
+*.iml
+.idea
+mobihelp_sdk_v1.4/build
+app/build
+gocibo-logisticsapp/build

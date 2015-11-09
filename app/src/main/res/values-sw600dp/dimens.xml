@@ -1,0 +1,40 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+    <dimen name="dimen_5">10dp</dimen>
+    <dimen name="dimen_10">15dp</dimen>
+    <dimen name="dimen_20">25dp</dimen>
+    <dimen name="dimen_30">35dp</dimen>
+    <dimen name="dimen_40">45dp</dimen>
+    <dimen name="dimen_50">55dp</dimen>
+    <dimen name="dimen_60">65dp</dimen>
+    <dimen name="dimen_100">110dp</dimen>
+    <dimen name="dimen_120">130dp</dimen>
+    <dimen name="dimen_150">160dp</dimen>
+    <dimen name="dimen_200">210dp</dimen>
+    <dimen name="dimen_250dp">260dp</dimen>
+    <dimen name="dimen_15">20dp</dimen>
+    <dimen name="dimen_25">30dp</dimen>
+    <dimen name="dimen_35">40dp</dimen>
+    <dimen name="dimen_45">50dp</dimen>
+    <dimen name="dimen_55">60dp</dimen>
+    <dimen name="dimen_70">75dp</dimen>
+    <dimen name="dimen_80">85dp</dimen>
+    <dimen name="dimen_130">135dp</dimen>
+    <dimen name="dimen_140">145dp</dimen>
+    <dimen name="dimen_175">185dp</dimen>
+    <!-- Text sizes -->
+    <dimen name="large_textsize">30sp</dimen>
+    <dimen name="above_medium_tx">26sp</dimen>
+    <dimen name="title_textsize">28sp</dimen>
+    <dimen name="medium_textsize">22sp</dimen>
+    <dimen name="little_small_textsize">20sp</dimen>
+    <dimen name="small_textsize">18sp</dimen>
+    <dimen name="more_small_textsize">16sp</dimen>
+    <dimen name="very_large_textsize">32sp</dimen>
+
+</resources>

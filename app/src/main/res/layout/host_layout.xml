@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/updateback"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="back"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_15"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="HOST A GAME"
+            android:textColor="@android:color/black" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tv_uedit_save" -->
+        <!-- android:layout_width="@dimen/dimen_50" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="0.2" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="SAVE" -->
+        <!-- android:textColor="@android:color/black" > -->
+        <!-- </TextView> -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/host_game_img"
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_100"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:src="@drawable/football" />
+
+    <LinearLayout
+        android:id="@+id/calendar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dateid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/calender_tx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center_horizontal"
+                android:text="25-Sept-2015"
+                android:textSize="@dimen/little_small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layouttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/timer"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                android:gravity="center"
+                android:src="@drawable/timer_normal" />
+
+            <TextView
+                android:id="@+id/tv_host_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center_horizontal"
+                android:text="25-Sept-2015"
+                android:textSize="@dimen/little_small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layouttime"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ivlocation"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:src="@drawable/location_normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:editable="false"
+                android:text="Bits Hyderabad"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_location"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/open_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_actionbar"
+            android:text="open" />
+
+        <Button
+            android:id="@+id/closed_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@color/transparent_actionbar"
+            android:text="closed" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:gravity="center_horizontal"
+        android:text="*You Decide who joins the game" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A" />
+
+            <Spinner
+                android:id="@+id/teamA_max_players"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center"
+                android:prompt="@string/teamcount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B" />
+
+            <Spinner
+                android:id="@+id/teamB_max_players"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:gravity="center"
+                android:prompt="@string/teamcount" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rldone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/signup_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DONE" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

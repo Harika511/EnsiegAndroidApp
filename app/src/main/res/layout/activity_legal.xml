@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/legal_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_actionbar"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/legal_back"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="back"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_15"
+            android:scaleX="0.95"
+            android:scaleY="0.95"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/about_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="center_vertical"
+            android:text="LEGAL"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/little_small_textsize" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/ensieg_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/legal_ll" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:alpha="0.40"
+        android:endColor="@color/login_btn_end"
+        android:startColor="@color/login_btn_start" />
+
+</shape>

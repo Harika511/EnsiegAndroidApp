@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context="com.skylka.ensieg.MatchCenter" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="40"
+        android:background="#CC050A15" >
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:text="MATCH CENTER"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/back_iv_match_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_action_back_arrow" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/back_iv_match_center"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_action_add" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView9"
+            android:layout_toLeftOf="@+id/imageView9"
+            android:layout_toStartOf="@+id/imageView9"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_action_share" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView10"
+            android:layout_toLeftOf="@+id/imageView10"
+            android:layout_toStartOf="@+id/imageView10"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_action_message" />
+
+        <TextView
+            android:id="@+id/tv_hostname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView12"
+            android:layout_alignStart="@id/textView12"
+            android:layout_below="@id/textView12"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="8dp"
+            android:singleLine="true"
+            android:text="@string/hosting_text"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_hostname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_action_face" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView12"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/imageView10"
+            android:layout_toStartOf="@+id/imageView10"
+            android:text="24 Aug 7:30PM"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_toEndOf="@+id/imageView12"
+            android:layout_toRightOf="@+id/imageView12"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_icon_football" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView13"
+            android:layout_alignRight="@+id/imageView13"
+            android:layout_below="@+id/imageView13"
+            android:text="11v11"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/textView15"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="SCF Grounds"
+            android:textColor="@color/wallet_holo_blue_light" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="10dp"
+            android:text="3 Places Open"
+            android:textColor="#12A032" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:paddingTop="14dp"
+            android:text="vs"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <RelativeLayout
+            android:id="@+id/team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/tv_vs"
+            android:layout_toRightOf="@id/tv_vs" >
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_lens_black_48dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="Team-B"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="Team Ready!"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/tv_vs"
+            android:layout_toStartOf="@id/tv_vs" >
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_lens_black_48dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:singleLine="true"
+                android:text="Team-A"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView21"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:text="4 Open Spots"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/divider_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:src="@drawable/teama_divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/divider_img" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp" />
+
+            <!-- <android.support.v7.widget.RecyclerView -->
+            <!-- android:id="@+id/recyclerView3" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="80dp" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:layout_marginTop="20dp" /> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <Button -->
+    <!-- android:id="@+id/joinButton" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginBottom="10dp" -->
+    <!-- android:background="#EDEDED" -->
+    <!-- android:text="Join" /> -->
+
+    <LinearLayout
+        android:id="@+id/joinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/joinButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Request to Join" />
+
+        <Button
+            android:id="@+id/joinButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Join" />
+    </LinearLayout>
+
+</LinearLayout>
